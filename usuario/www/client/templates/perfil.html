@@ -1,25 +1,29 @@
 <ion-view title="Perfil">
     <ion-content>
         <div class="row">
-            <div class="col">
-                <img src="../img/VTrEvT4I.jpeg">
+            <div class="col-25"></div>
+            <div class="col-50">
+                <div class="row">
+                    <img class="img-perfil" src="../img/VTrEvT4I.jpeg">
+                </div>
+                <div style="text-align:center;">
+                    <h2>Miguel Piñeyro</h2>
+                </div>
             </div>
+            <div class="col-25"></div>
         </div>
-        <div class="row">
-            <div class="col">
-                <ion-tabs class="tabs-positive tabs-icon-top">
-                    <ion-tab title="Datos" icon="ion-android-list" href="#/perfil/misdatos">
-                        <ion-nav-view name="misdatos-tab"></ion-nav-view>
-                    </ion-tab>
-                    <ion-tab title="Mis Equipos" icon="ion-ionic" href="#/perfil/misequipos">
-                        <ion-nav-view name="misequipos-tab"></ion-nav-view>
-                    </ion-tab>
-                    <ion-tab title="Mis Grupos" icon="ion-android-people" href="#/perfil/misgrupos">
-                        <ion-nav-view name="misgrupos-tab"></ion-nav-view>
-                    </ion-tab>
-                </ion-tabs>
-
-            </div>
+        <div class="row" style="padding-top:50px;">
+            <ion-tabs class="tabs-positive tabs-icon-top">
+                <ion-tab title="Datos" icon="ion-android-list" href="#/perfil/misdatos">
+                    <ion-nav-view name="misdatos-tab"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="Mis Equipos" icon="ion-ionic" href="#/perfil/misequipos">
+                    <ion-nav-view name="misequipos-tab"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="Mis Grupos" icon="ion-android-people" href="#/perfil/misgrupos">
+                    <ion-nav-view name="misgrupos-tab"></ion-nav-view>
+                </ion-tab>
+            </ion-tabs>
         </div>
     </ion-content>
 </ion-view>		

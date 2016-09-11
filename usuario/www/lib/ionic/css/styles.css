@@ -1,14 +1,17 @@
-.perfil{
+.img-perfil{
     border-radius: 100px;
     border: 1px solid #fff;
-    width: 180px;
-    height: 180px;
     box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+    display: block;
+    margin: auto;
+    height: 180px;
+    width: 180px;
 }
 
-.contenido {    
+.row-img-perfil {    
 	background-color: white;
 	box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+	padding-bottom: 130px;
 }
 
 
