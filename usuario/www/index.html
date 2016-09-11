@@ -54,21 +54,14 @@
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
     -->
       
-      <script src="./client/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="./client/bower_components/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="./client/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./client/bower_components/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
-  <script src="./client/controllers/schedulerController.js"></script>
-  <link rel="stylesheet" href="./lib/calendario/styles/kendo.common.min.css"/>
-  <link rel="stylesheet" href="./lib/calendario/styles/kendo.rtl.min.css"/>
-  <link rel="stylesheet" href="./lib/calendario/styles/kendo.silver.min.css"/>
-  <link rel="stylesheet" href="./lib/calendario/styles/kendo.mobile.all.min.css"/>
-  <link rel="stylesheet" href="./lib/calendario/styles/clockpicker.css"/>
-
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="./lib/calendario/kendo.all.min.js"></script>
-  <script src="./lib/calendario/kendo.culture.es-AR.min.js"></script>
-  <script src="./lib/calendario/kendo.messages.es-AR.min.js"></script>
-  <script src="./lib/calendario/clockpicker.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.1.1/css/ionic.min.css">
+    <link rel="stylesheet" href="./client/bower_components/ionic-calendar/dist/css/calendar.min.css">
+    <script src="http://code.ionicframework.com/1.1.1/js/ionic.bundle.min.js"></script>
+    <script src="./client/bower_components/ionic-calendar/dist/js/calendar-tpls.min.js"></script>
+        
 
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
@@ -90,23 +83,23 @@
             </ion-header-bar>
             <ion-content padding="false" class="side-menu-left has-header">
                 <ion-list id="listItems" data-componentid="list2">
-                    <ion-item class="item-icon-left" id="menu-list-item-noticias" data-componentid="list-item-noticias" href="#/tirolibre/noticias">
+                    <ion-item class="item-icon-left" id="menu-list-item-noticias" data-componentid="list-item-noticias" href="#/noticias">
                         <i class="icon ion-ios-paper-outline"></i>Noticias</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-eventos" data-componentid="list-item-eventos" href="#/tirolibre/eventos">
+                    <ion-item class="item-icon-left" id="menu-list-item-eventos" data-componentid="list-item-eventos" href="#/eventos">
                         <i class="icon ion-android-clipboard"></i>Eventos</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-canchas" data-componentid="list-item-canchas" href="#/tirolibre/canchas">
+                    <ion-item class="item-icon-left" id="menu-list-item-canchas" data-componentid="list-item-canchas" href="#/canchas">
                         <i class="icon ion-ios-football-outline"></i>Canchas</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/tirolibre/perfil">
+                    <ion-item class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/perfil">
                         <i class="icon ion-android-contact"></i>Perfil</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/tirolibre/torneos">
+                    <ion-item class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/torneos">
                         <i class="icon ion-trophy"></i>Torneos</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-reservas" data-componentid="list-item-reservas" href="#/tirolibre/misreservas" ng-click="schedulear()">
+                    <ion-item class="item-icon-left" id="menu-list-item-reservas" data-componentid="list-item-reservas" href="#/misreservas" ng-click="schedulear()">
                         <i class="icon ion-calendar"></i>Mis reservas</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-grupos" data-componentid="list-item-grupos" href="#/tirolibre/misgrupos">
+                    <!-- <ion-item class="item-icon-left" id="menu-list-item-grupos" data-componentid="list-item-grupos" href="#/tirolibre/misgrupos">
                         <i class="icon ion-android-people"></i>Mis grupos</ion-item>
                     <ion-item class="item-icon-left" id="menu-list-item-equipos" data-componentid="list-item-equipos" href="#/tirolibre/misequipos">
-                        <i class="icon ion-ios-list"></i>Mis equipos</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-contacto" data-componentid="list-item-contacto" href="#/tirolibre/contacto">
+                        <i class="icon ion-ios-list"></i>Mis equipos</ion-item> -->
+                    <ion-item class="item-icon-left" id="menu-list-item-contacto" data-componentid="list-item-contacto" href="#/contacto">
                         <i class="icon ion-ios-telephone"></i>Contacto</ion-item>
                 </ion-list>
             </ion-content>
@@ -114,16 +107,5 @@
     </ion-side-menus>
   </div>
   </body>
-    
-    
-    
-
-  
-
-  <script type="text/javascript">
-  //set the Kendo UI culture
-  $('#scheduler').kendoScheduler();
-  kendo.culture("es-AR");
-</script>
     
 </html>
