@@ -66,7 +66,8 @@ angular.module('app.routes', [])
     url: '/misequipos',
     views:{
         'misequipos-tab':{
-            templateUrl:'client/templates/misequipos.html'
+            templateUrl:'client/templates/misequipos.html',
+            controller:'misEquiposCtroller'
         }
     }
   })
