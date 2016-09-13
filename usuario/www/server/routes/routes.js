@@ -35,7 +35,7 @@ angular.module('app.routes', [])
   
   .state('misreservas', {
     url: '/misreservas',
-    controller:'canchasCtrl',
+    controller:'',
     templateUrl:'client/templates/reservas.html'
   })
   
@@ -48,7 +48,8 @@ angular.module('app.routes', [])
     url:'/misdatos',
         views:{
           'misdatos-tab':{
-            templateUrl:'client/templates/misdatos.html'
+            templateUrl:'client/templates/misdatos.html',
+            controller:'misDatosController'
           }
         }
     })
