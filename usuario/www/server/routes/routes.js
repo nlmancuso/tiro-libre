@@ -35,7 +35,7 @@ angular.module('app.routes', [])
   
   .state('misreservas', {
     url: '/misreservas',
-    controller:'',
+    controller:'CalendarDemoCtrl',
     templateUrl:'client/templates/reservas.html'
   })
   
