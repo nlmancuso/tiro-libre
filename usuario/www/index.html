@@ -72,7 +72,7 @@
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
   <div>
-    <ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menus enable-menu-with-back-views="false">
         <ion-side-menu-content>
             <ion-nav-bar class="bar-stable">
                 <ion-nav-buttons side="left">
@@ -83,29 +83,29 @@
             <ion-nav-view></ion-nav-view>
             
         </ion-side-menu-content>
-        <ion-side-menu side="left" enable-menu-with-back-views="true">
+        <ion-side-menu side="left" enable-menu-with-back-views="false">
             <ion-header-bar class="bar-stable">
                 <div class="title">Menu</div>
             </ion-header-bar>
             <ion-content padding="false" class="side-menu-left has-header">
                 <ion-list id="listItems" data-componentid="list2">
-                    <ion-item class="item-icon-left" id="menu-list-item-noticias" data-componentid="list-item-noticias" href="#/noticias">
+                    <ion-item menu-close="" class="item-icon-left" id="menu-list-item-noticias" data-componentid="list-item-noticias" href="#/noticias">
                         <i class="icon ion-ios-paper-outline"></i>Noticias</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-eventos" data-componentid="list-item-eventos" href="#/eventos">
+                    <ion-item menu-close="" class="item-icon-left" id="menu-list-item-eventos" data-componentid="list-item-eventos" href="#/eventos">
                         <i class="icon ion-android-clipboard"></i>Eventos</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-canchas" data-componentid="list-item-canchas" href="#/canchas">
+                    <ion-item menu-close="" class="item-icon-left" id="menu-list-item-canchas" data-componentid="list-item-canchas" href="#/canchas">
                         <i class="icon ion-ios-football-outline"></i>Canchas</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/perfil">
+                    <ion-item menu-close="" class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/perfil">
                         <i class="icon ion-android-contact"></i>Perfil</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/torneos">
+                    <ion-item menu-close="" class="item-icon-left" id="menu-list-item-torneos" data-componentid="list-item-torneos" href="#/torneos">
                         <i class="icon ion-trophy"></i>Torneos</ion-item>
-                    <ion-item class="item-icon-left" id="menu-list-item-reservas" data-componentid="list-item-reservas" href="#/misreservas" ng-click="schedulear()">
+                    <ion-item menu-close="" class="item-icon-left" id="menu-list-item-reservas" data-componentid="list-item-reservas" href="#/misreservas" ng-click="schedulear()">
                         <i class="icon ion-calendar"></i>Mis reservas</ion-item>
                     <!-- <ion-item class="item-icon-left" id="menu-list-item-grupos" data-componentid="list-item-grupos" href="#/tirolibre/misgrupos">
                         <i class="icon ion-android-people"></i>Mis grupos</ion-item>
                     <ion-item class="item-icon-left" id="menu-list-item-equipos" data-componentid="list-item-equipos" href="#/tirolibre/misequipos">
                         <i class="icon ion-ios-list"></i>Mis equipos</ion-item> -->
-                    <ion-item class="item-icon-left" id="menu-list-item-contacto" data-componentid="list-item-contacto" href="#/contacto">
+                    <ion-item menu-close="" class="item-icon-left" id="menu-list-item-contacto" data-componentid="list-item-contacto" href="#/contacto">
                         <i class="icon ion-ios-telephone"></i>Contacto</ion-item>
                 </ion-list>
             </ion-content>
