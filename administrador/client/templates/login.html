@@ -3,7 +3,7 @@
   <div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
   <form class="form" ng-submit="login()">
     <div class="form-group">
-      <label>Username</label>
+      <label><B>Username</B></label>
       <input type="text" class="form-control" name="username" ng-model="loginForm.username" required>
     </div>
     <div class="form-group">
@@ -12,6 +12,9 @@
       </div>
       <div>
         <button type="submit" class="btn btn-default" ng-disabled="disabled">Login</button>
+      </div>
+      <div>
+        <label href="">Recuperar contraseña</label>
       </div>
   </form>
 </div>

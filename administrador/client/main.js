@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ui.router', 'credit-cards']);
+var myApp = angular.module('myApp', ['ui.router', 'credit-cards', 'colorpicker.module', 'kendo.directives']);
 
 myApp.filter('yesNo', function () {
   return function (boolean) {
@@ -21,6 +21,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
     .state("home.index",{
       url: "/inicio",
       templateUrl: 'templates/index.html',
+      controller:'schedulerController',
       access: {restricted: true}
 
     })
