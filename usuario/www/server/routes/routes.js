@@ -43,6 +43,11 @@ angular.module('app.routes', [])
     url: '/perfil',
     templateUrl:'client/templates/perfil.html'
   })
+
+    .state('perfilNo', {
+    url: '/perfilNo',
+    templateUrl:'client/templates/perfilNo.html'
+  })
   
   .state('perfil.misdatos', {
     url:'/misdatos',
