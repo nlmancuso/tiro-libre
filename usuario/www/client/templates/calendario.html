@@ -1,0 +1,61 @@
+<ion-view class="fondo">
+
+    <ion-content scroll="true" class="has-header">
+    	<div style="position:static;overflow:auto;height:262px" class="fondoBlanco">
+	       <!--  <calendar ng-model="calendar.currentDate" calendar-mode="calendar.mode"
+	                  time-selected="onTimeSelected(selectedTime, events)" step="30"
+	                  vent-source="calendar.eventSource"></calendar> -->
+	                  <calendar ng-model="calendar.currentDate" calendar-mode="calendar.mode" event-source="calendar.eventSource"
+                      range-changed="reloadSource(startTime, endTime)"
+                      event-selected="onEventSelected(event)" title-changed="onViewTitleChanged(title)"
+                      time-selected="onTimeSelected(selectedTime, events)" step="30"></calendar>
+      	</div>
+
+      	<!-- REPETIR -->
+      	<div class="row" ng-repeat="reserva in reservasDia" style="overflow:auto">
+			<div class="col-10">
+				<b>Inicio: </b>
+			</div>	
+			<div class="col-33">
+				 {{reserva.startTime | date: 'HH:mm' }}	hs			
+			</div>
+
+			<div class="col-10">
+				<b>Fin: </b>
+			</div>	
+			<div class="col-33">
+				 {{reserva.endTime | date: 'HH:mm' }}	hs			
+			</div>
+
+		</div>
+
+		<div layout="row fondoDIV" align="center">
+			<button class="button button-positive2 button-block fondoButton" ng-click="changeMode('day')">Ir a día</button>
+		</div>
+		<div layout="row fondoButton">
+			<button class="button button-positive2 button-block" ng-click="changeMode('month')">Ir a mes</button>
+		</div>
+		<div layout="row fondoButton">
+			<button class="button button-positive2 button-block" ng-click="loadEvents()">Cargar eventos de prueba</button>
+		</div>
+
+    </ion-content>
+
+</ion-view>
+
+
+<style type="text/css">
+.fondoButton{
+	background-color: green;
+}
+.fondoDIV{
+	background-color: white;
+}
+.button.button-positive2.button-block{
+background-color: green;
+opacity: 0.8;
+border: none;
+color:white;
+}
+
+</style>
