@@ -18,7 +18,11 @@ angular.module('ui.rCalendar', ['ui.rCalendar.tpls'])
         queryMode: 'local',
         step: 60,
         monthviewDisplayEventTemplateUrl: 'templates/rcalendar/monthviewDisplayEvent.html',
+<<<<<<< HEAD
         /*monthviewEventDetailTemplateUrl: 'templates/rcalendar/monthviewEventDetail.html',*/
+=======
+        monthviewEventDetailTemplateUrl: 'templates/rcalendar/monthviewEventDetail.html',
+>>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
         weekviewAllDayEventTemplateUrl: 'templates/rcalendar/displayEvent.html',
         weekviewNormalEventTemplateUrl: 'templates/rcalendar/displayEvent.html',
         dayviewAllDayEventTemplateUrl: 'templates/rcalendar/displayEvent.html',

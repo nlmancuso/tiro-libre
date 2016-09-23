@@ -35,6 +35,7 @@ angular.module('app.routes', [])
   
   .state('misreservas', {
     url: '/misreservas',
+<<<<<<< HEAD
     controller:'misReservasCtroller',
     templateUrl:'client/templates/misreservas.html'
   })
@@ -43,6 +44,10 @@ angular.module('app.routes', [])
     url:'/calendario',
     controller: 'calendarioCtroller',
     templateUrl:'client/templates/calendario.html'
+=======
+    controller:'CalendarDemoCtrl',
+    templateUrl:'client/templates/reservas.html'
+>>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
   })
   
   .state('perfil', {
@@ -50,7 +55,11 @@ angular.module('app.routes', [])
     templateUrl:'client/templates/perfil.html'
   })
 
+<<<<<<< HEAD
   .state('perfilNo', {
+=======
+    .state('perfilNo', {
+>>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
     url: '/perfilNo',
     templateUrl:'client/templates/perfilNo.html'
   })
@@ -86,6 +95,7 @@ angular.module('app.routes', [])
 
   .state('contacto', {
     url: '/contacto',
+<<<<<<< HEAD
     templateUrl:'client/templates/contacto.html'
   })
   
@@ -94,6 +104,15 @@ angular.module('app.routes', [])
     templateUrl:'client/templates/instorneo.html'
   })
 
+=======
+    views:{
+        'contenido':{
+            templateUrl:'client/templates/contacto.html'
+        }
+    }
+  })
+  
+>>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
   $urlRouterProvider.otherwise('/canchas');
 
 });
