@@ -5,12 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-<<<<<<< HEAD
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',
   'ui.rCalendar','ngMaterial','ngAnimate'])
-=======
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services','ui.rCalendar'])
->>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

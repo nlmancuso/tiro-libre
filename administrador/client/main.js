@@ -34,7 +34,6 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 
     })
 
-<<<<<<< HEAD
     .state("home.pagos",{
       url: "/pagos",
       templateUrl: 'templates/pagos.html',
@@ -43,8 +42,6 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 
     })
 
-=======
->>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
     .state("home.usuarios",{
       url: "/usuarios",
       templateUrl: 'templates/usuarios.html',

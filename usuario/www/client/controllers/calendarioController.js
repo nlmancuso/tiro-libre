@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 angular.module('app.controllers')
 
 .controller('calendarioCtroller',['$scope', function ($scope) {
@@ -13,53 +12,6 @@ angular.module('app.controllers')
 
         $scope.diaSeleccionado = 
 
-=======
-angular.module('app.controllers', ['ionic', 'ngAnimate', 'ui.rCalendar'])
-    .run(function ($ionicPlatform, $animate) {
-        'use strict';
-        $animate.enabled(false);
-    })
-    .config(function ($stateProvider, $urlRouterProvider) {
-        'use strict';
-        $stateProvider
-            .state('tabs', {
-                url: '/tab',
-                abstract: true,
-                templateUrl: 'templates/tabs.html'
-            })
-            .state('tabs.home', {
-                url: '/home',
-                views: {
-                    'home-tab': {
-                        templateUrl: 'templates/home.html',
-                        controller: 'CalendarDemoCtrl'
-                    }
-                }
-            })
-            .state('tabs.about', {
-                url: '/about',
-                views: {
-                    'about-tab': {
-                        templateUrl: 'templates/about.html'
-                    }
-                }
-            })
-            .state('tabs.contact', {
-                url: '/contact',
-                views: {
-                    'contact-tab': {
-                        templateUrl: 'templates/contact.html'
-                    }
-                }
-            });
-
-        $urlRouterProvider.otherwise('/tab/home');
-    })
-
-    .controller('CalendarDemoCtrl', function ($scope) {
-        'use strict';
-        $scope.calendar = {};
->>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
         $scope.changeMode = function (mode) {
             $scope.calendar.mode = mode;
         };
@@ -91,13 +43,10 @@ angular.module('app.controllers', ['ionic', 'ngAnimate', 'ui.rCalendar'])
 
         $scope.onTimeSelected = function (selectedTime, events) {
             console.log('Selected time: ' + selectedTime + ', hasEvents: ' + (events !== undefined && events.length !== 0));
-<<<<<<< HEAD
             
             $scope.reservasDia = events;
 
             console.log($scope.reservasDia);
-=======
->>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
         };
 
         function createRandomEvents() {
@@ -136,11 +85,7 @@ angular.module('app.controllers', ['ionic', 'ngAnimate', 'ui.rCalendar'])
             }
             return events;
         }
-<<<<<<< HEAD
 
 
 
     }]);
-=======
-    });
->>>>>>> 398c3cf7d6185e02d4934cf30320ddb113184ad6
