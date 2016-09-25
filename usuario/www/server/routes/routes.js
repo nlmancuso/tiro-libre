@@ -18,7 +18,7 @@ angular.module('app.routes', [])
     templateUrl:'client/templates/noticias.html'
   })
 
-  .state('resetcontraseña', {
+  .state('resetpass', {
     url: '/resetcontraseña',
     templateUrl:'client/templates/resetcontraseña.html'
   })
@@ -35,6 +35,7 @@ angular.module('app.routes', [])
   
   .state('torneos', {
     url: '/torneos',
+    controller:'miTorneoCtroller',
     templateUrl:'client/templates/torneos.html'
   })
   
@@ -99,13 +100,6 @@ angular.module('app.routes', [])
     url: '/contacto',
     templateUrl:'client/templates/contacto.html'
   })
-  
-  .state('instorneo', {
-    url: '/instorneo',
-    templateUrl:'client/templates/instorneo.html'
-  })
-
-
 
   $urlRouterProvider.otherwise('/canchas');
 
