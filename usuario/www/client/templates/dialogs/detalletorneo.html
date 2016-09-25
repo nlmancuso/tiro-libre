@@ -2,7 +2,7 @@
 	<ion-content scroll="true" class="fondo colorText">
 
 		<md-divider></md-divider>
-		<md-subheader class="md-no-sticky fondoDTorneo">Datos Torneo</md-subheader>
+		<md-subheader class="md-no-sticky fondoDTorneo"><b>Datos Torneo</b></md-subheader>
 		<div class="row" layout="row" layout-align="center center">
 			<div class="col-25" style="text-align:center" layout="column">
 				<b>Inicio</b>
@@ -80,7 +80,7 @@
 
 		</div>
 		<md-divider></md-divider>
-		<md-subheader class="md-no-sticky fondoDTorneo">Jugadores</md-subheader>
+		<md-subheader class="md-no-sticky fondoDTorneo"><b>Jugadores</b></md-subheader>
 		<div class="row" layout="row" layout-align="center center">
 			<div class="col-20" style="text-align:center" layout="column">
 				<b>DNI</b>
@@ -170,15 +170,25 @@
 			</div>
 		</div>
 		<md-divider></md-divider>
-		<md-subheader class="md-no-sticky fondoDTorneo">Pago</md-subheader>
+		<md-subheader class="md-no-sticky fondoDTorneo"><b>Pago</b></md-subheader>
 
 
 
 		<div class="row" layout="row" layout-align="center center" ng-hide="reserva.importeAdeudado <= 0">
+			<div class="col-20" style="text-align:center" layout="column">
+				<b>Pagado</b>				
+			</div>
+			<div class="col-10" style="text-align:center" layout="column">
+				<md-checkbox ng-model="reserva.permanente" class="dotted" disabled></md-checkbox>
+			</div>
 			<div class="col" layout="column">
 				<button class="button button-positive" ng-click="openPago()">Pagar con tarjeta</button>
 			</div>
 
+		</div>
+
+		<div class="row" layout="row" layout-align="center center">
+			<button class="button button-block button-positive3" ng-click="closeTorneo()"><b>Anotarse</b></button>
 		</div>
 
 		<div class="row" layout="row" layout-align="center center">
@@ -199,5 +209,11 @@
 	.dotted {
 		background-color: white;
 		width: 10px;
+	}
+	.button.button-block.button-positive3{
+		color:white;
+		background-color: #0c60ee;
+		border:0px;
+
 	}
 </style>
