@@ -105,6 +105,8 @@ angular.module('app.routes', [])
     templateUrl:'client/templates/instorneo.html'
   })
 
+
+
   $urlRouterProvider.otherwise('/canchas');
 
 });

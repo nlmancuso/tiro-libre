@@ -2,19 +2,19 @@
 	<ion-content scroll="true" class="fondo colorText">
 
 		<md-divider></md-divider>
-		<md-subheader class="md-no-sticky fondoDReserva">Datos Torneo</md-subheader>
+		<md-subheader class="md-no-sticky fondoDTorneo">Datos Torneo</md-subheader>
 		<div class="row" layout="row" layout-align="center center">
 			<div class="col-25" style="text-align:center" layout="column">
 				<b>Inicio</b>
 			</div>
 			<div class="col">
-				<b>01/10/2016</b>
+				<b>{{torneo.fechaInicio}}</b>
 			</div>
 			<div class="col-25" style="text-align:center" layout="column">
 			<b>Fín</b>
 			</div>
 			<div class="col">
-				<b>01/12/2017</b>
+				<b>{{torneo.fechaFin}}</b>
 			</div>
 		</div>
 
@@ -24,13 +24,13 @@
 				<b>Jugadores: </b>
 			</div>
 			<div class="col" layout="column">
-				<b>10</b>
+				<b>{{torneo.jugadores}}</b>
 			</div>
 			<div class="col-25" style="text-align:center" layout="column">
 				<b>Inscripción: </b>
 			</div>
 			<div class="col" layout="column">
-				<b>$2000</b>
+				<b>${{torneo.inscripcion}}</b>
 			</div>
 
 		</div>
@@ -41,13 +41,13 @@
 				<b>Titulares</b>
 			</div>
 			<div class="col" layout="column">
-				<b>6</b>
+				<b>{{torneo.titulares}}</b>
 			</div>
 			<div class="col-25" style="text-align:center" layout="column">
 				<b>Por partido: </b>
 			</div>
 			<div class="col" layout="column">
-				<b>$500</b>
+				<b>${{torneo.partido}}</b>
 			</div>
 
 		</div>
@@ -55,16 +55,16 @@
 		<div class="row" layout="row" layout-align="center center">
 
 			<div class="col-25" style="text-align:center" layout="column">
-				<b>Suplente</b>
+				<b>Suplentes</b>
 			</div>
 			<div class="col" layout="column">
-				<b>4</b>
+				<b>{{torneo.suplentes}}</b>
 			</div>
 			<div class="col-25" style="text-align:center" layout="column">
 				<b>Formato: </b>
 			</div>
 			<div class="col" layout="column">
-				<b>Liga</b>
+				<b>{{torneo.formato}}</b>
 			</div>
 
 		</div>
@@ -75,12 +75,12 @@
 				<b>Equipos</b>
 			</div>
 			<div class="col" layout="column">
-				<b>10</b>
+				<b>{{torneo.equipos}}</b>
 			</div>
 
 		</div>
 		<md-divider></md-divider>
-		<md-subheader class="md-no-sticky fondoDReserva">Jugadores</md-subheader>
+		<md-subheader class="md-no-sticky fondoDTorneo">Jugadores</md-subheader>
 		<div class="row" layout="row" layout-align="center center">
 			<div class="col-20" style="text-align:center" layout="column">
 				<b>DNI</b>
@@ -170,7 +170,7 @@
 			</div>
 		</div>
 		<md-divider></md-divider>
-		<md-subheader class="md-no-sticky fondoDReserva">Pago</md-subheader>
+		<md-subheader class="md-no-sticky fondoDTorneo">Pago</md-subheader>
 
 
 
@@ -182,13 +182,13 @@
 		</div>
 
 		<div class="row" layout="row" layout-align="center center">
-			<button class="button button-block button-assertive" ng-click="closeReserva()">Cerrar</button>
+			<button class="button button-block button-assertive" ng-click="closeTorneo()">Cerrar</button>
 		</div>
 	</ion-content>
 </ion-view>
 
 <style type="text/css">
-	.fondoDReserva{
+	.fondoDTorneo{
         background-color: green;
         color:white;
         size:100px;
